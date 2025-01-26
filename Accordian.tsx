@@ -27,7 +27,7 @@ export default function Accordian() {
     // get data from api
     useEffect(() => {
         fetchData();
-    });
+    },[]); //// Empty dependency array means this runs only once on mount
 
     const fetchData = async () => {
         try {
